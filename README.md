@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+# Create React App으로 리액트 프로젝트 시작하기
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이번 프로젝트는 **Create React App(CRA)** 으로 초기 세팅했다.
+복잡한 설정 없이 리액트 개발 환경을 빠르게 구성할 수 있어서 자주 쓰이는 방식 중 하나다.
 
-## Available Scripts
+개발하면서 자주 사용하는 명령어들을 정리해봤다.
+CRA를 처음 써보거나, 다시 사용할 때 참고용으로 보기 좋을 것 같다.
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+## 자주 사용하는 명령어 정리
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `yarn start` – 개발 서버 실행
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+개발 모드로 앱을 실행한다.
+브라우저에서 [http://localhost:3000](http://localhost:3000)으로 접속하면 바로 확인 가능하다.
 
-### `yarn test`
+파일을 수정하면 자동으로 새로고침되고, 콘솔에 에러나 경고도 바로 표시돼서 빠르게 확인할 수 있다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+### `yarn test` – 테스트 실행
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+테스트 코드가 작성돼 있다면, 이 명령어로 바로 실행할 수 있다.
+인터랙티브한 방식으로 동작해서 필요한 테스트만 선택적으로 돌릴 수도 있다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> 참고: [CRA 테스트 문서](https://facebook.github.io/create-react-app/docs/running-tests)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `yarn eject`
+### `yarn build` – 배포용 빌드
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+앱을 실제 배포할 때 사용하는 명령어.
+빌드 결과물은 `build` 폴더에 생성되며, 최적화가 자동으로 적용돼 성능이 좋다.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+파일 이름에는 해시값도 포함되어 있어서 캐싱에도 유리하다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> 참고: [CRA 배포 문서](https://facebook.github.io/create-react-app/docs/deployment)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+### `yarn eject` – 설정 직접 커스터마이징
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+CRA에서 기본으로 숨겨져 있는 설정 파일들(webpack, Babel 등)을 꺼내고 싶을 때 사용한다.
+이 명령어를 실행하면 모든 설정이 프로젝트 루트로 복사되고, 직접 수정할 수 있게 된다.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+다만, **한 번 eject하면 되돌릴 수 없기 때문에 정말 필요할 때만 쓰는 걸 추천**한다.
+나는 이번 프로젝트에서는 사용하지 않았다.
+
+---
+
+## 참고한 공식 문서
+
+* [Create React App 문서](https://facebook.github.io/create-react-app/docs/getting-started)
+* [React 공식 문서](https://reactjs.org/)
